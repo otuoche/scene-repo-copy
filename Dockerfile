@@ -27,4 +27,4 @@ RUN curl "https://my-scene-model-bucket.s3.amazonaws.com/model/model.safetensors
 EXPOSE 8000
 
 # 10. Command to run your FastAPI app
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000"]
